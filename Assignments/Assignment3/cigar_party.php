@@ -1,10 +1,4 @@
 <?php
-//Needed for Debugging in chrome
-require_once('/home/jgalapon/Documents/PHP/PhpConsole.php');
-PhpConsole::start();
-
-
-    
 function cigar_party($number_of_cigars, $is_weekend = false) {
 	
 	if($is_weekend){
@@ -45,7 +39,12 @@ function cigar_party($number_of_cigars, $is_weekend = false) {
 	<h1>HTML5 boilerplate in a PHP doc!</h1>
 	<p>
 			<?php
-				echo cigar_party(70, true);
+				echo "cigar_party(70, true)" . cigar_party(70, true) . "</br>";
+				echo "cigar_party(39, true)" . cigar_party(39, true) . "</br>";
+				echo "cigar_party(40, true)" . cigar_party(40, true) . "</br>";
+				echo "cigar_party(39)" . cigar_party(39) . "</br>";
+				echo "cigar_party(70)" . cigar_party(70) . "</br>";
+				echo "cigar_party(40)" . cigar_party(40) . "</br>";
 			?>
 	</p>
 </body>

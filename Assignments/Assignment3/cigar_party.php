@@ -1,4 +1,9 @@
 <?php
+/*
+ * Jersey Galapon
+ * September 8, 2012
+ * Checks to See if Cigar party is successful
+ */
 function cigar_party($number_of_cigars, $is_weekend = false) {
 	
 	if($is_weekend){
@@ -12,7 +17,7 @@ function cigar_party($number_of_cigars, $is_weekend = false) {
 	}
 	
 	else {
-		//Fix <= 60 not working 
+ 
 		if ($number_of_cigars >= 40 && $number_of_cigars <= 60){
 					echo "This Party worked out great";
 		}

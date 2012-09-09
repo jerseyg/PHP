@@ -1,4 +1,9 @@
 <?php						
+/*
+ * Jersey Galapon
+ * September 8, 2012
+ * Outptus the weather from the arrays
+ */
 $weather_wpg = array(
                     'location'               => 'Winnipeg, MB',
                     'current_date'           => '9 Jan 2009',

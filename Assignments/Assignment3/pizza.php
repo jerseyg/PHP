@@ -1,4 +1,9 @@
 <?php
+/*
+ * Jersey Galapon
+ * September 8, 2012
+ * Calculates Pizza orders
+ */
 
 $topping_prices = array (
                         'mushrooms'         => 0.50,

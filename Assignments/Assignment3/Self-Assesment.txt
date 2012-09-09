@@ -23,4 +23,4 @@ The provided print_order function generates the correct subtotals, taxes and gra
 General [2]	[x]
 All pages validate as XHTML 1.0 Strict or HTML5. [1]	[x]
 All PHP code is properly indented when nested. [1]	[x]
-Total Available Marks: 13
+Total Marks: 13

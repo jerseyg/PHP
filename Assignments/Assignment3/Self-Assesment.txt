@@ -1,0 +1,26 @@
+Marking Rubric
+
+Q1 - Party Time [4]	[x]
+The cigar_party function returns a boolean value in all cases. [1] [x]
+
+The cigar_party function returns the correct boolean value for the following situations:
+Weekend party. Less than 40 cigars. [0.25]	[x]
+Weekday party. Less than 40 cigars.  [0.25]	[x]
+Weekend party. Between 40 and 60 (inclusive) cigars.  [0.25]	[x]
+Weekday party. Between 40 and 60 (inclusive) cigars.  [0.25]	[x]	
+Weekend party. Over 60 cigars.  [0.25]	[x]
+Weekday party. Over 60 cigars.  [0.25]	[x]
+
+Q2 - Weather Time [4]	[x]
+The forecast_english function generates the correct current conditions output for the provided Winnipeg and Sunnyvale forecast data. [2]	[x]
+The forecast_english function generates the correct forecast output for the provided Winnipeg and Sunnyvale forecast data. [2]	[x]
+
+Q3 - Pizza Time [3]	[x]
+The provided print_order function generates the correct customer output from your $current_order input hash. [1]	[x]
+The provided print_order function generates the correct pizza output from your $current_order input hash. [1]	[x]
+The provided print_order function generates the correct subtotals, taxes and grand total from your $current_order input hash. [1]	[x]
+
+General [2]	[x]
+All pages validate as XHTML 1.0 Strict or HTML5. [1]	[x]
+All PHP code is properly indented when nested. [1]	[x]
+Total Available Marks: 13

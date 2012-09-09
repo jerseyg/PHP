@@ -70,7 +70,7 @@ function weathernetwork ($weather){
 		</title>
 </head>
 <body>
-	<h1>HTML5 boilerplate in a PHP doc!</h1>
+	<h1>The Weather</h1>
 	<p>
 			<?php
 				weathernetwork($weather_sun);

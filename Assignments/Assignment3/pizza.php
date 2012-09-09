@@ -79,7 +79,7 @@ $current_order = Array (
 		</title>
 </head>
 <body>
-	<h1>HTML5 boilerplate in a PHP doc!</h1>
+	<h1>Pizza</h1>
 	<p>
 			<?php
 				print_order($current_order);

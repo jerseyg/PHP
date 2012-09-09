@@ -59,13 +59,12 @@ $current_order = Array (
 											array(
 										'size' => 'medium',
 										'toppings' => array ('olives', 'bacon', 'feta', 'green peppers')
-									
-									),
-									array(
+										),
+										
+										array(
 										'size' => 'large',
-										'toppings' => array ('beef', 'tomatoes', 'mushrooms')
-									
-									)
+										'toppings' => array ('beef', 'tomatoes', 'mushrooms')								
+										)
 						)
 							
 );

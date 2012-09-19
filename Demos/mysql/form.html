@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Form Example</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Enter Your Quote Here</h1>
+        <form action="insert.php" method="post">
+            <fieldset>
+                <label for="quote">Quote</label>
+                <textarea name="quote" id="quote" rows="10" cols="55"></textarea>
+                <input type="submit" />
+            </fieldset>
+        </form>
+        <p>
+            <a href="select.php">View All Quotes.</a>
+        </p>
+    </div>
+</body>
+</html>

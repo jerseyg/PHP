@@ -12,9 +12,19 @@
 <body>
   <h1>Looking into the $_POST</h1>
   <pre>
-       <!-- use print_r to display $_POST -->
+
+      <?php
+      	print_r($_POST); 
+      ?>
   </pre>
-   <!-- Output the data if valid, create a message informing
-   user of invalid data -->
+  
+   <?php if($valid_data): ?>
+    <h2>Well done! Thanks for filling out our form.</h2>
+    <p><strong>Frogs:</strong> <?php echo $_POST['frogs'] ?></p>
+    <p><strong>Description:</strong> <?php echo $_POST['description'] ?></p>
+    <?php else: ?>
+    	<h2>One of the text boxes is empty</h2>
+   	<?php endif ?>
+   	
 </body>
 </html>

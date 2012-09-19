@@ -23,12 +23,19 @@
    <h1>The $_GET SUPER Global</h1>
    <p>Using print_r($_GET):</p>
    <pre>
-       <!--use print_r to display $_GET-->
+       <?php echo print_r($_GET); ?>
+	    <br/>
    </pre>
    <p>Using the output of print_r in a variable:</p>
    <pre>
-       <!--echo get super using short_tag-->
+       <?php echo 	$get_super; ?>
    </pre>
-   <!-- Make a decision on the number of frogs-->
+   <?php if(do_i_have_frogs()): ?>
+   	<h1>How many double frogs?</h1>
+   	<p>Why, there are <?php echo $double_the_frogs ?></p>
+   <?php else: ?>
+   		<h1>THERE ARE NO FROGS!</h1>
+   	<?php endif ?>	
+   	
 </body>
 </html>

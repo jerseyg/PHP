@@ -1,0 +1,161 @@
+body {
+    text-align: center; /* This is for IE6, otherwise our wrapper may not be centred. */
+    background-color: #fff;
+    font-size: 13px;
+    	font-family: Arial, Helvetica, sans-serif;	
+}
+
+/******************/
+/* WRAPPER        */
+/******************/
+
+div#wrapper {
+    background-color: #fff;
+    color: #000;
+    margin: 5px auto;
+    padding: 0 1em;
+    text-align: left; /* Since we set the alignment to center in the body, we have to re-align to left. */
+    width: 775px; /* Sidebar width + content width. */
+}
+
+/******************/
+/* HEADER         */
+/******************/
+
+div#header {
+    font-family: serif;
+    border-bottom: 1px dotted gray;
+    padding: 1em 0;
+    overflow: auto; /* Clears the float set in the img element automatically. */
+    zoom: 1;        /* Required for IE6 in order for overflow clearing to work. */
+}
+
+div#header img {
+    float: left;
+    margin-left: -50px;
+    margin-bottom: -10px;
+}
+
+div#header h1 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-size: 3em;
+}
+
+div#header h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+/******************/
+/* SIDEBAR        */
+/******************/
+
+div#sidebar { /* Floated left with a fixed width. */
+    float: left;
+    width: 191px;
+}
+
+div#sidebar ul {
+    margin: 1em 0 0 1em;
+    padding: 0;
+}
+
+div#sidebar a {
+    font-size: 1.5em;
+    color: grey;
+    text-decoration: none;
+}
+
+div#sidebar a.active { /* A class applied to links in the sidebar if they are 'active'. */
+    color: white;
+    font-weight: bold;
+}
+
+div#sidebar a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************/
+/* CONTENT        */
+/******************/
+
+div#content { /* Floated left with a fixed width. */
+    float: left;
+    width: 580px;
+    margin: 0 0 2em 0;
+}
+
+div#content p {
+    margin: 1em;
+}
+
+div#content h2 {
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+/******************/
+/* FOOTER         */
+/******************/
+
+div#footer {
+    border-top: 1px dashed gray;
+    clear: both; /* Clear the left floating set in the sidebar/content div. */
+    color: gray;
+}
+
+div#footer p {
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+
+/******************/
+/* ELEMENTS       */
+/******************/
+
+form {
+    margin: 1em;
+    clear: both;
+    width: 350px;
+}
+
+form  select, textarea {
+    display: block;
+	
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.field {
+
+	        width:120px;
+	        clear:left;
+}
+A
+.field2 {
+	float: left;
+	        width:300px;
+	        clear:left;
+}

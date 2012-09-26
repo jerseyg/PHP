@@ -1,7 +1,7 @@
 <?php
 
 require 'connect.php';
-$sql = "SELECT * FROM tweets";
+$sql = "SELECT status FROM tweets";
 $result = $db -> query($sql);
 
 $rows = mysqli_fetch_array($result, MYSQLI_ASSOC) ;
@@ -54,15 +54,14 @@ $rows = mysqli_fetch_array($result, MYSQLI_ASSOC) ;
             <!--display each quote in a new <li> element-->
             <!--display each quote in a new <li> element-->
         
-            <?php if(empty($rows))  : ?>
+            <?php if(empty($rows)): ?>
                     <li>
                         No Tweets Found
                     </li>
             <?php else: ?>
       
-        <?php while ($row = $result->fetch_assoc()): ?>
+        <?php while ($row = $result->fetch_assoc()):  ?>
                 <li>
-                    <!--<a href="quote.php?id=<?= $row['id'] ?>"> -->
                     <?= $row['status']; ?>
 
                 </li>
@@ -73,9 +72,4 @@ $rows = mysqli_fetch_array($result, MYSQLI_ASSOC) ;
 
     </div>
 </body>
-
-
-
-
-
 </html>

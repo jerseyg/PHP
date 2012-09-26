@@ -22,6 +22,7 @@
 
         	<?php  header( 'Location: form.php' ) ; ?>
         	<h1>Successful added Tweets Table</h1>
+        	<?php exit; ?>
         	<?php else: ?>
         		<h1>Error Added to Tweets Table</h1>
                 <?php printf(mysqli_error($db)) ?>
@@ -30,6 +31,7 @@
         <?php else: ?>
         <h2> Either you entered no tweet or Tweet is longer then 140 Characters </h2>
         <a href="form.php">Return to Form</a>
+        <?php exit; ?>
     <?php endif; ?>
 
     </div>

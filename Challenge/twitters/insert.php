@@ -1,8 +1,8 @@
 <?php
+
 	require "connect.php";
-	$quote = $_POST['tweet'];
-	$sql = "INSERT INTO tweet (tweets) VALUES ('{$tweets}')";
-	$result = $db->query($sql);
+	$tweets = mysql_real_escape_string ($_POST["tweet"]);
+	$sql = "INSERT INTO tweets (status) VALUES ('{$tweets}')";
 ?>
 
 <?= '<?xml version="1.0" encoding="UTF-8"?>' ?>
@@ -14,16 +14,24 @@
 </head>
 <body>
     <div id="wrapper">
+
+
+        <?php if (strlen($tweets) > 0 && strlen($tweets) <= 140): ?>
+        <?php $result = $db->query($sql); ?>
         <?php if ($result): ?>
+
+        	<?php  header( 'Location: form.php' ) ; ?>
         	<h1>Successful added Tweets Table</h1>
         	<?php else: ?>
         		<h1>Error Added to Tweets Table</h1>
-        		<?php endif; ?>
-        		<h2>SQL Execute</h2>
-        		<pre><?= $sql; ?></pre>
-        		<a href="form.html">Add Tween quote.</a>
-				<strong>or</strong>
-				<a href="select.php">View All Tweets</a>      
+                <?php printf(mysqli_error($db)) ?>
+        		<?php endif; ?> 
+
+        <?php else: ?>
+        <h2> Either you entered no tweet or Tweet is longer then 140 Characters </h2>
+        <a href="form.php">Return to Form</a>
+    <?php endif; ?>
+
     </div>
 </body>
 </html>

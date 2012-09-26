@@ -1,6 +1,6 @@
 <?php
     require 'connect.php';
-    $sql = "SELECT * FROM quotes";
+    $sql = "SELECT * FROM tweets";
     $result = $db->query($sql);
 ?>
 <?= '<?xml version="1.0" encoding="UTF-8"?>' ?>
@@ -18,7 +18,7 @@
             <?php while ($row = $result->fetch_assoc()): ?>
                 <li>
                     <a href="quote.php?id=<?= $row['id'] ?>">
-                    <?= $row['quote']; ?></a>
+                    <?= $row['status']; ?></a>
                 </li>
             <?php endwhile; ?>
         </ul>

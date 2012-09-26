@@ -1,0 +1,34 @@
+body {
+
+}
+
+input.tweets {
+	width: 350px;
+	height: 25px;
+	padding: 0.5px;
+	margin: auto;
+}
+
+fieldset {
+	width: 50%;
+}
+
+ul {
+	border: medium none;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	text-align: left;
+}
+
+li {
+	background: #808080;
+	border-radius: 13px;
+	width: auto;
+	padding: 10px;
+	margin: 5px;
+}
+
+input.sub_button {
+	margin-left: 43px;
+}

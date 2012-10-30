@@ -39,6 +39,25 @@
 			imageline($image, 0, rand() % CAPTCHA_HEIGHT, CAPTCHA_WIDTH, rand() % CAPTCHA_HEIGHT, $graphic_colour);
 		}
 
+
+		// Sprinkle in some random dots
+
+		for($i =  0; $i < 50; $i++){
+			imagesetpixel($image, rand() % CAPTCHA_WIDTH, rand() % CAPTCHA_HEIGHT, $graphic_colour);
+		}
+
+
+		// Draw the pass_phrase string
+
+		imagettftext($image, 18, 1, 10, CAPTCHA_HEIGHT - 5, $text_colour, "CherrySwash-Bold.ttf", $pass_phrase);
+
+		//Output the image as a PNG
+		imagepng($image);
+
+		//Clean up
+		imagedestroy($image);
+
+
 ?>
 
 

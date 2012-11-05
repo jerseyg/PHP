@@ -1,0 +1,42 @@
+Marking Rubric
+The following rubric will serve as a specification document for your application. Along with your assignment you must submit this rubric reformatted as a check-list. Using this check-list you will specify which required features are implemented by your application.
+
+
+CAPTCHA Challenge: [7]
+
+Each time your script is loaded it will display a new randomly generated CAPTCHA challenge. (The style of CAPTCHA is up to you.) [1]
+Users can submit their CAPTCHA response via a form (or via another input mechanism suitable to your style of CAPTCHA). [1]
+If the user submits the correct CAPTCHA response they will see a success message. [1]
+If the user submits the correct CAPTCHA response they will *not* see the CAPTCHA image again. [1]
+If the user submits the incorrect CAPTCHA text they should see an error message indicating that they did not succeed in decoding the CAPTCHA. [1]
+If the user submits the incorrect CAPTCHA text they should be presented with a new CAPTCHA image. [1]
+If you are using a text based CAPTCHA the challenge should *not* be case sensitive. [1]
+
+
+Comments: [3]
+
+If the user submits the correct CAPTCHA response the email address and text they submitted will be added to your comments table. [2]
+If the user submits the incorrect CAPTCHA response the information they entered into the form should be re-entered into the form for them. (So that they can try again, without having to re-type everything.) [1]
+
+
+Extra cookie lockout: [5]
+
+Your script keeps tracks of failed CAPTCHA attempts using a cookie. [1]
+Everytime the user inputs a correct CAPTCHA this cookie should be deleted or set to zero. [1]
+If the user fails the CAPTCHA test 5 times within 30 seconds they should be locked-out of the system for three minutes. [2]
+If the user fails the CAPTCHA test 4 times within 20 seconds, waits 15 more seconds, and then fails again, they should *not* be locked out. [0]
+For testing purposes you should be able to quickly modify (as PHP constants) the following lockout parameters: [1]
+The number of allowed invalid attempts.
+The amount of time during which invalid attempts are accumulated.
+The amount of time a user will be locked out of the system.
+
+
+General: (Negative marks applied if these specs are not met.)
+
+No PHP/SQL errors are triggered and/or displayed while interacting with your blog. [0]
+All PHP code is properly indented when nested. [0]
+All markup must validate as XHTML 1.0 Strict or HTML5. [0]
+Assignment must be submitted along with an export of your blogging table. You can use the export functionality of phpMyAdmin to export your blogging table. [0]
+This rubric has been converted into a self-evaluation checklist and submitted with your assignment. i.e. Mark yourself with this rubric. [0]
+
+Total Marks: 15
